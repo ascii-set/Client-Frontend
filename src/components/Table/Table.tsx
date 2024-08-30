@@ -95,7 +95,7 @@ const Table: React.FC = () => {
                       <p className="text-sm">{coin.market_cap_rank}</p>
                       </div>
                       <div className="flex">
-                      <Image src={coin.image} width={30} height={30} />
+                      <Image  alt="" src={coin.image} width={30} height={30} />
                       <div className="flex px-2 space-x-4 items-center lg-m-w:hidden">
                         <p className="text-sm">{coin.name}</p>
                         <p className="text-xs">{coin.symbol}</p>

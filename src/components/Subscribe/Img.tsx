@@ -18,6 +18,7 @@ const Img: React.FC = () => {
     <div className="mt-4 md:mt-0 md:flex-auto ">
       <div>
         <Image
+          alt=""
           src={imgLink}
           width={600}
           height={400}

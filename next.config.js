@@ -1,12 +1,25 @@
 /** @type {import('next').NextConfig} */
 const path = require("path");
-const nextConfig = {
-  reactStrictMode: true,
-};
 
 module.exports = {
-  nextConfig,
+  reactStrictMode: true,
   images: {
-    domains: ["s2.coinmarketcap.com", "assets.coingecko.com", "coin-images.coingecko.com"],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 's2.coinmarketcap.com',
+        pathname: '**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'assets.coingecko.com',
+        pathname: '**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'coin-images.coingecko.com',
+        pathname: '**',
+      },
+    ],
   },
 };
